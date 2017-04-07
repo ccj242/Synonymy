@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- 
+	Usage:
+
+	To localize the description, use the following format for the description element.
+	<description>
+	<text xml:lang="en">English App description goes here</text>
+	<text xml:lang="fr">French App description goes here</text>
+	<text xml:lang="ja">Japanese App description goes here</text>
+	</description>
+
+	To localize the name, use the following format for the name element.
+	<name>
+	<text xml:lang="en">English App name goes here</text>
+	<text xml:lang="fr">French App name goes here</text>
+	<text xml:lang="ja">Japanese App name goes here</text>
+	</name>
+-->
+<application xmlns="http://ns.adobe.com/air/application/23.0">
+    <id>com.jarvisfilms.synonymylitegalaxy</id>
+    <versionNumber>4.2</versionNumber>
+    <versionLabel>4.2</versionLabel>
+    <filename>Synonymy Free</filename>
+    <description></description>
+    <name>Synonymy Free</name>
+    <copyright></copyright>
+    <initialWindow>
+        <content>synonymy_lite.swf</content>
+        <systemChrome>standard</systemChrome>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <fullScreen>true</fullScreen>
+        <aspectRatio>landscape</aspectRatio>
+        <renderMode>auto</renderMode>
+        <maximizable>true</maximizable>
+        <minimizable>true</minimizable>
+        <resizable>true</resizable>
+        <autoOrients>true</autoOrients>
+    </initialWindow>
+    <icon>
+        <image192x192>Lite_Icons/192.png</image192x192>
+        <image144x144>Lite_Icons/144.png</image144x144>
+        <image96x96>Lite_Icons/96.png</image96x96>
+        <image72x72>Lite_Icons/72.png</image72x72>
+        <image48x48>Lite_Icons/48.png</image48x48>
+        <image36x36>Lite_Icons/36.png</image36x36>
+    </icon>
+    <customUpdateUI>false</customUpdateUI>
+    <allowBrowserInvocation>false</allowBrowserInvocation>
+    <android>
+        <containsVideo>true</containsVideo>
+        <manifestAdditions><![CDATA[<manifest>
+			
+			<uses-feature android:name="com.sec.feature.spen_usp" android:required="true"/>
+			
+			<uses-permission android:name="android.permission.INTERNET"/>
+        	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+        	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+        </manifest>]]></manifestAdditions>
+    </android>
+    <supportedLanguages>en</supportedLanguages>
+    <iPhone>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+        <InfoAdditions><![CDATA[
+    <key>UIDeviceFamily</key>
+    <array><string>1</string><string>2</string></array>
+]]></InfoAdditions>
+    </iPhone>
+</application>
